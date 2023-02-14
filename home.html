@@ -10,10 +10,11 @@
 </head>
 
 <body>
+    <!-- Header -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="javascript:void(0)">Logo</a> -->
-            <div class="d-flex align-items-center mx-4">
+            <div class="d-flex align-items-center mx-3">
                 <img src="assets/logo.png" class="img-fluid px-3" style="max-height: 100px" alt="error loading asset">
                 <h1>Free logo creator</h1>
             </div>
@@ -40,7 +41,59 @@
         </div>
     </nav>
 
-    <div class="container-lg border">100% wide until large breakpoint</div>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/build.png" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/money.png" alt="Chicago" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/unique.png" alt="New York" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container-lg border d-flex flex-row">
+        <div class="container-lg border">
+            <form>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </div>
     <div class="container-xl border">100% wide until extra large breakpoint</div>
     <div class="container-xxl border">100% wide until extra extra large breakpoint</div>
 
