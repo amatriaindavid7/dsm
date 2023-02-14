@@ -10,38 +10,36 @@
 </head>
 
 <body>
-    <!-- <div class="container-fluid p-3 bg-dark text-white row">
-        <div class="col-sm-1">
-            <img src="assets/logo.png" class="img-fluid" style="max-height: 100px" alt="error loading asset">
-        </div>
-        <div class="col-sm-6">
-            <h1>Free logo creator</h1>
-        </div>
-    </div> -->
-    <nav class="navbar navbar-dark bg-dark text-white">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white">
         <div class="container-fluid">
-            <img src="assets/logo.png" class="img-fluid" style="max-height: 100px" alt="error loading asset">
-            <h1>Free logo creator</h1>
+            <!-- <a class="navbar-brand" href="javascript:void(0)">Logo</a> -->
+            <div class="d-flex align-items-center mx-4">
+                <img src="assets/logo.png" class="img-fluid px-3" style="max-height: 100px" alt="error loading asset">
+                <h1>Free logo creator</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Español</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Euskera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">English</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
 
-    <div class="col-md3 m-2">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Castellano</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Euskera</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">English</a>
-            </li>
-        </ul>
-        <form class="d-flex m-2">
-            <input class="form-control me-2" type="text" placeholder="Search for logos">
-            <button class="btn btn-primary" type="button">Search</button>
-        </form>
-    </div>
     <div class="container-lg border">100% wide until large breakpoint</div>
     <div class="container-xl border">100% wide until extra large breakpoint</div>
     <div class="container-xxl border">100% wide until extra extra large breakpoint</div>
